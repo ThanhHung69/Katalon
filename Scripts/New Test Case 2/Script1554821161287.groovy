@@ -23,9 +23,13 @@ WebUI.click(findTestObject('Page_ng nhp  Sch Mm/a_Google'))
 
 WebUI.setText(findTestObject('Page_ng nhp - Ti khon Google/input_sachmemvn_identifier'), 'thanhhungsky98@gmail.com')
 
+WebUI.delay(3)
+
 WebUI.click(findTestObject('Page_ng nhp - Ti khon Google/span_Tip theo'))
 
-WebUI.setText(findTestObject('Page_ng nhp - Ti khon Google/input_Qu nhiu ln th khng thnh cng_password'), '+4Wj5QjyFPcebtHymcjpcg==')
+WebUI.setEncryptedText(findTestObject('Page_ng nhp - Ti khon Google/input_Qu nhiu ln th khng thnh cng_password'), '+4Wj5QjyFPcebtHymcjpcg==')
+
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_ng nhp - Ti khon Google/span_Tip theo'))
 
@@ -40,6 +44,8 @@ WebUI.click(findTestObject('Page_Hc liu - Sch Mm/div_Chn lp hc_ng-input'))
 WebUI.click(findTestObject('Page_Hc liu - Sch Mm/div_Test'))
 
 WebUI.click(findTestObject('Page_Hc liu - Sch Mm/input__btn btn-primary'))
+
+WebUI.verifyElementPresent(findTestObject('Page_Hc liu - Sch Mm/span_Giao bi tp'), 0)
 
 WebUI.closeBrowser()
 

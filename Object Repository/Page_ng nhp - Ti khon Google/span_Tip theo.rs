@@ -44,7 +44,7 @@
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>//div[@id='identifierNext']/content/span</value>
+      <value>//*[@id=&quot;passwordNext&quot;]/content/span</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
